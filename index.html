@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="tela-completa">
+        <header class="cabecalho">
+            <div class="logo-grupo">
+                <img src="logomarca.png" alt="Descrição da imagem">
+            </div>
+        </header>
+        <div class="conteudo">
+            <nav class="menu">
+                <a href="#"><img src="./home.png" alt="Início" class="menu-icon">Home</a>
+                <a href="#"><img src="./pessoas.png" alt="Pessoas" class="menu-icon">Gestão de pessoas</a>
+                <a href="#"><img src="./funcoes.png" alt="Funções" class="menu-icon">Gestão de funções</a>
+                <a href="#"><img src="./add.png" alt="Novo Colaborador" class="menu-icon">Cadastrar Colaboradores</a>
+                <a href="#"><img src="./add.png" alt="Nova Função" class="menu-icon">Cadastrar Função</a>
+            </nav>
+            <div class="formulario-container">
+                <h2 class="titulo">Cadastro de Colaboradores</h2>
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite o nome" required />
+                    </div>
+                    <div class="campo">
+                        <label for="funcao">Função:</label>
+                        <select id="funcao">
+                            <option>Selecione</option>
+                            <option>Analista</option>
+                            <option>Gerente</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="situacao">Situação:</label>
+                        <select id="situacao">
+                            <option>Selecione</option>
+                            <option>Ativo</option>
+                            <option>Inativo</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
